@@ -1,0 +1,456 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Open+Sans&family=Roboto:ital,wght@1,300&display=swap");
+/* cairo font */
+
+* {
+  font-family: "Cairo", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  /* the scrolling => smooth, cool */
+}
+
+:root {
+  --color1: #333333;
+  --color2: rgb(109, 109, 100);
+  --color3: #949393;
+  --color4: #c0c0c0;
+  --color5: #cccccc;
+  --color6: #dddddd;
+  --color7: #999999;
+  --color8: #413e3e;
+  --color-bl: #708090;
+  --color-br: #8b8b81;
+  /* colors li ghadi tbna 3lihun website  */
+  --color-b1: #2565ae;
+  --color-b2: #3c99dc;
+  --color-b3: #0f5298;
+  --color-b4: rgb(70, 130, 180);
+  --color-b5: #191970;
+  --color-b6: #4169e1;
+}
+
+header {
+  background-image: linear-gradient(to right, var(--color3), var(--color6));
+  /* background-color: rgb(70, 130, 180, 0.4); */
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 120px;
+}
+
+header .logo {
+  width: 60px;
+  border-radius: 25%;
+  transition: 1.02s linear;
+}
+
+header .logo:hover {
+  transform: scale(1.17) rotate(360deg);
+  border-radius: 50%;
+}
+
+header .navigation a {
+  color: var(--color-b3);
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 600;
+  padding-left: 30px;
+  transition: 0.4s;
+}
+
+header .navigation a:hover {
+  color: var(--color1);
+  opacity: 0.8;
+}
+
+/*  */
+
+section {
+  padding: 100px 120px;
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: var(--color6);
+  /* background: url(../pics/pic2.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; */
+}
+
+.main h2 {
+  color: #000000;
+  font-size: 1.3em;
+  font-weight: 500;
+}
+
+.main h2 span {
+  color: transparent;
+  font-size: 3em;
+  font-weight: 500;
+  /*  */
+  display: inline-block;
+  margin-top: -14px;
+  letter-spacing: 3px;
+}
+
+.main h2 span {
+  background-image: url(../pics/gif1.gif);
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.main h3 {
+  color: var(--color1);
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: -14px;
+  margin-bottom: 14px;
+}
+
+.main .main-button {
+  color: var(--color1);
+  background-color: var(--color3);
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 700;
+  display: inline-block;
+  /* padding: 0.9375em 2.1875em; */
+  padding: 0.7375em 1.5875em;
+  letter-spacing: 1.2px;
+  border-radius: 15px;
+  margin-bottom: 14px;
+  transition: 0.7s ease;
+}
+
+.main .main-button:hover {
+  background-color: var(--color4);
+  color: #000000;
+  transform: scale(1.17);
+}
+
+.main .social-icons a {
+  color: black;
+  font-size: 1.7em;
+  padding-right: 30px;
+}
+
+.main .social-icons a i {
+  transition: 0.5s linear;
+}
+
+.main .social-icons a i:hover {
+  color: var(--color-b1);
+  transform: scale(1.2);
+}
+
+/* ----------------------------- */
+/* ----------------------------- */
+/* ----------------------------- */
+/* services section styles */
+
+.cards .title {
+  display: flex;
+  justify-content: center;
+  /* to center the title "Services" */
+  color: var(--color-b3);
+  font-size: 2.2em;
+  font-weight: 700;
+  letter-spacing: 1.7px;
+  margin-bottom: 20px;
+  /* margin-b => bash dakshi li t7t title (content) ykun some space between them */
+}
+
+.cards .content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.cards .content .first-card,
+.cards .content .second-card,
+.cards .content .third-card {
+  background-color: var(--color6);
+  width: 21em;
+  /* if u want to know the value with the px => 21.25 x 16 */
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.17);
+  border-radius: 10px;
+  padding: 25px;
+  margin: 15px;
+  transition: 0.5s linear;
+}
+
+.cards .content .first-card:hover,
+.cards .content .second-card:hover,
+.cards .content .third-card:hover {
+  transform: scale(1.07);
+  cursor: pointer;
+}
+
+/* style dakshi li wsst every child */
+
+.cards .content .icon {
+  color: var(--color-b3);
+  font-size: 6.9em;
+  text-align: center;
+}
+
+.cards .content .info h3 {
+  color: var(--color8);
+  font-size: 1.27em;
+  font-weight: 700;
+  margin: 10px;
+}
+
+.cards .content .info {
+  text-align: center;
+}
+
+.cards .content .info p {
+  line-height: 1.5;
+}
+
+/*  */
+/* .cards .content .first-card .icon {
+  transition: 0.4s ease;
+}
+.cards .content .first-card .icon:hover {
+  transform: rotate(45deg);
+  color: var(--color-bl);
+}
+
+.cards .content .second-card .icon {
+  transition: 0.4s ease;
+}
+.cards .content .second-card .icon:hover {
+  transform: rotate(90deg);
+  color: var(--color-bl);
+}
+.cards .content .third-card .icon {
+  transition: 0.5s ease;
+}
+.cards .content .third-card .icon:hover {
+  transform: rotate(180deg);
+  color: var(--color-bl);
+} */
+/*  */
+
+/* ----------------------------- */
+/* ----------------------------- */
+/* ----------------------------- */
+/* projects section styles */
+
+.prjts {
+  background-color: var(--color8);
+}
+
+.prjts .title {
+  display: flex;
+  justify-content: center;
+  /* to center the title "Services" */
+  color: var(--color-b3);
+  font-size: 2.2em;
+  font-weight: 700;
+  letter-spacing: 1.7px;
+  margin-bottom: 20px;
+}
+
+.prjts .content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.prjts .prjt1,
+.prjts .prjt2,
+.prjts .prjt3,
+.prjts .prjt4,
+.prjts .prjt5,
+.prjts .prjt6 {
+  background-color: #fff;
+  border: 1px solid #fff;
+  min-height: 14em;
+  width: 20em;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 20px;
+  transition: 0.5s linear;
+}
+
+.prjts .prjt1:hover,
+.prjts .prjt2:hover,
+.prjts .prjt3:hover,
+.prjts .prjt4:hover,
+.prjts .prjt5:hover,
+.prjts .prjt6:hover {
+  transform: scale(1.07);
+  cursor: pointer;
+}
+
+.prjts .prjt1 .prjt-img img,
+.prjts .prjt2 .prjt-img img,
+.prjts .prjt3 .prjt-img img,
+.prjts .prjt4 .prjt-img img,
+.prjts .prjt5 .prjt-img img,
+.prjts .prjt6 .prjt-img img {
+  width: 100%;
+}
+
+.prjts .prjt1:hover .prjt-img,
+.prjts .prjt2:hover .prjt-img,
+.prjts .prjt3:hover .prjt-img,
+.prjts .prjt4:hover .prjt-img,
+.prjts .prjt5:hover .prjt-img,
+.prjts .prjt6:hover .prjt-img {
+  opacity: 0.94;
+}
+
+.prjts .prjt-infos {
+  padding: 0.8em;
+}
+
+.prjts .prjt-infos .prjt-category {
+  font-size: 0.9em;
+  color: #000;
+}
+
+.prjts .prjt-infos .prjt-name {
+  display: flex;
+  justify-content: space-between;
+  /* title left o link f right */
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.prjts .prjt-infos .prjt-name .more-details {
+  text-decoration: none;
+  color: var(--color-b3);
+}
+
+.prjts .prjt-infos .prjt-name .more-details:hover {
+  color: var(--color-b5);
+}
+
+/* ----------------------------- */
+/* ----------------------------- */
+/* ----------------------------- */
+/* contact section styles */
+
+.contact-us .title {
+  display: flex;
+  justify-content: center;
+  /* to center the title "Services" */
+  color: var(--color-b3);
+  font-size: 2.2em;
+  font-weight: 700;
+  letter-spacing: 1.7px;
+  margin-bottom: 20px;
+}
+
+.contact-us .content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.contact-us .content .phone,
+.contact-us .content .email {
+  background-color: var(--color6);
+  width: 18em;
+  /* if u want to know the value with the px => 21.25 x 16 */
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.17);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 15px;
+  transition: 0.5s linear;
+}
+
+.contact-us .content .phone:hover,
+.contact-us .content .email:hover {
+  transform: scale(1.07);
+  cursor: pointer;
+}
+
+.contact-us .content .icon {
+  color: var(--color-b3);
+  font-size: 5.5em;
+  text-align: center;
+}
+
+.contact-us .content .info h3 {
+  color: var(--color1);
+  font-size: 1.22em;
+  font-weight: 700;
+  margin: 10px;
+}
+
+.contact-us .content .info {
+  text-align: center;
+}
+
+.contact-us .content .info p {
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+/* -- -- - - */
+
+/* -- -- -- - */
+/* ----------------------------- */
+/* ----------------------------- */
+/* ----------------------------- */
+/* footer section styles */
+
+footer {
+  background-color: var(--color8);
+}
+
+footer .content {
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .content .icons a {
+  padding-right: 17px;
+  color: #fff;
+  transition: 0.4s linear;
+}
+
+footer .content .icons a:hover {
+  color: var(--color-b1);
+  opacity: 0.9;
+}
+
+footer .content .footer-title {
+  color: #fff;
+  word-spacing: 2px;
+}
+
+footer .content .footer-title span {
+  color: var(--color-b1);
+  font-weight: 700;
+  font-size: 1.1em;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */

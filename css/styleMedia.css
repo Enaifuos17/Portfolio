@@ -1,0 +1,128 @@
+@media (max-width: 1023px) {
+  header {
+    padding: 12px 20px;
+  }
+
+  header .navigation a {
+    padding-left: 5px;
+  }
+
+  section {
+    padding: 20px 20px;
+  }
+
+  .main h2 span {
+    font-size: 1.6em;
+    letter-spacing: normal;
+    font-weight: 600;
+  }
+
+  .main h2 {
+    font-size: 1.2em;
+  }
+
+  .main h3 {
+    font-size: 1.4em;
+    padding-top: 5px;
+  }
+
+  .main .main-button {
+    font-size: 1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.5375em 1.3875em;
+    letter-spacing: normal;
+    border-radius: 15px;
+    margin-bottom: 8px;
+  }
+
+  .main .social-icons a {
+    font-size: 1em;
+    padding-right: 12px;
+  }
+
+  .cards .content .first-card,
+  .cards .content .second-card,
+  .cards .content .third-card {
+    width: 10em;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+  }
+
+  .cards .content .icon {
+    font-size: 3.9em;
+    text-align: center;
+  }
+
+  .cards .content .info h3 {
+    color: var(--color8);
+    font-size: 0.9em;
+    font-weight: 700;
+    margin: 5px;
+  }
+
+  .cards .content .info {
+    text-align: center;
+  }
+
+  .cards .content .info p {
+    line-height: normal;
+    font-size: 0.8em;
+  }
+  /*  */
+
+  .prjts .prjt-infos {
+    padding: 0.2em;
+  }
+
+  .prjts .prjt-infos .prjt-category {
+    font-size: 0.7em;
+  }
+
+  .prjts .prjt-infos .prjt-name {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.8em;
+  }
+  /*  */
+  /*  */
+  .contact-us .title {
+    font-size: 2.2em;
+    font-weight: 700;
+    letter-spacing: normal;
+    margin-bottom: 20px;
+  }
+
+  .contact-us .content .phone {
+    width: 14em;
+    padding: 8px;
+  }
+
+  .contact-us .content .email {
+    padding: 4px;
+  }
+
+  .contact-us .content .icon {
+    font-size: 3.5em;
+    text-align: center;
+  }
+
+  .contact-us .content .info h3 {
+    color: var(--color1);
+    font-size: 1.1em;
+    font-weight: 700;
+    margin: 10px;
+  }
+
+  .contact-us .content .info {
+    text-align: center;
+  }
+
+  .contact-us .content .info p {
+    font-weight: 600;
+    font-size: 1em;
+  }
+}
